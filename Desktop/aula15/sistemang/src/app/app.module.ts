@@ -4,9 +4,9 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
-import { ClienteComponent } from './cliente/cliente.component';
+import { camisetaComponent } from './camiseta/camiseta.Component';
 import { LoginComponent } from './login/login.component';
-
+import { calçaComponent } from './calça/calça.componet'
 import { AngularFireAuth  } from '@angular/fire/auth';
 
 import { AuthGuard } from "./guards/auth.guard";
@@ -30,7 +30,8 @@ import { FormsModule } from '@angular/forms';
     FormsModule,
     AngularFireModule.initializeApp(environment.firebase),
     AngularFireDatabaseModule,
-    ClienteComponent,
+    camisetaComponent,
+    calçaComponent,
     LoginComponent    
   ],
   providers: [AuthGuard, LoginService, AngularFireModule, AngularFireAuth],
